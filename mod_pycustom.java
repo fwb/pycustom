@@ -31,12 +31,9 @@ public class mod_pycustom {
 			ItemStack bronzeIngot = OreDictionary.getOres( "ingotBronze" ).get( 0 );
 			bronzeIngot.stackSize = 4;
 			ShapedOreRecipe recipe = new ShapedOreRecipe( 
-					bronzeIngot,
-					true,
-					new Object[] {
-							"CC", "CT", 'C', "ingotCopper", 'T', "ingotTin"
-					}
-					);
+				bronzeIngot, true,
+				new Object[] { "CC", "CT", 'C', "ingotCopper", 'T', "ingotTin" }
+			);
 		
 			CraftingManager.getInstance( ).getRecipeList( ).add( recipe );
 		} catch( Exception e ) {
